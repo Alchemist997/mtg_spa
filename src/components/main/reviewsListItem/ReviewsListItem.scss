@@ -1,0 +1,20 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $second-bc;
+  border-radius: 15px;
+  padding: 10px 15px;
+  padding-bottom: 6px;
+
+  &__name {
+    margin-bottom: 0.5rem;
+  }
+
+  &__date {
+    margin-top: auto;
+    align-self: flex-end;
+    font-size: 0.8rem;
+  }
+}

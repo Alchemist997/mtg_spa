@@ -1,9 +1,9 @@
 import { combineReducers, createStore } from 'redux';
 import { devToolsEnhancer } from 'redux-devtools-extension';
-import counterReducer from './reducers/counterReducer';
+import reviewsReducer from './reducers/reviewsReducer';
 
 const rootReducer = combineReducers({
-  count: counterReducer,
+  reviews: reviewsReducer,
 });
 
 const store = createStore(

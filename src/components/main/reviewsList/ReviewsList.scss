@@ -1,0 +1,21 @@
+.reviews {
+  &-list-wrap {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-list {
+    max-width: 80%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  &-title {
+    font-size: 1.5rem;
+  }
+}

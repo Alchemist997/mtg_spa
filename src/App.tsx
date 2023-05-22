@@ -1,7 +1,13 @@
-import Counter from './components/counter/Counter';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
 
 const App: React.FC = () => {
-  return (<Counter />);
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 };
 
 export default App;
