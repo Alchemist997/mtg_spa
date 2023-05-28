@@ -1,5 +1,6 @@
 import React from 'react';
 import Select from './select/Select';
+import Watch from './watch/Watch';
 
 class Header extends React.Component {
 
@@ -11,8 +12,11 @@ class Header extends React.Component {
             <div className="header__logo-wrap">
               <img className='header__logo' src={`${process.env.PUBLIC_URL}/logo2.png`} alt="Logo" />
             </div>
-            Header
-            <Select />
+
+            <div className='header__ui-wrap'>
+              <Select />
+              <Watch />
+            </div>
           </header>
         </div>
       </div>

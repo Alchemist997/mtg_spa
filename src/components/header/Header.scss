@@ -21,4 +21,21 @@
     max-height: 100%;
     border-radius: 10px;
   }
+
+  &__ui-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .watch {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .watch {
+    display: none;
+  }
 }
