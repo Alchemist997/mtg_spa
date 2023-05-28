@@ -5,10 +5,14 @@ import ReviewForm from './reviewForm/ReviewForm';
 class Main extends React.Component {
   render() {
     return (
-      <main className='main'>
-        <ReviewsList />
-        <ReviewForm />
-      </main>
+      <div className="main-wrap">
+        <div className="container">
+          <main className='main'>
+            <ReviewsList />
+            <ReviewForm />
+          </main>
+        </div>
+      </div>
     );
   }
 };

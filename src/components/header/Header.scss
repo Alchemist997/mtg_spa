@@ -1,0 +1,24 @@
+.header-wrap {
+  background-color: $dark-second-bc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px 0;
+
+  &__logo-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    object-fit: contain;
+  }
+
+  &__logo {
+    max-height: 100%;
+    border-radius: 10px;
+  }
+}

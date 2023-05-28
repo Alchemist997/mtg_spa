@@ -4,6 +4,13 @@
 
 @import './variables.scss';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
 html,
 body {
   margin: 0;
@@ -15,6 +22,12 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: $main-bc;
   color: $main-color;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 button {
@@ -63,13 +76,8 @@ ul {
   margin: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  outline: none;
-}
-
+@import './components/header/Header.scss';
+@import './components/header/select/Select.scss';
 @import './components/main/Main.scss';
 @import './components/main/reviewsList/ReviewsList.scss';
 @import './components/main/reviewsListItem/ReviewsListItem.scss';

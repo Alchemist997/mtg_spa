@@ -10,11 +10,14 @@
 
   &__name {
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: darken($main-color, 10)
   }
 
   &__date {
     margin-top: auto;
     align-self: flex-end;
     font-size: 0.8rem;
+    color: darken($main-color, 10);
   }
 }

@@ -1,8 +1,13 @@
-import { ADD_REVIEW } from './../actionTypes/reviews';
+import { ADD_REVIEW, SET_LANG } from './../actionTypes/reviews';
 
-export function addReview<N, R>(name: N, review: R) {
-  return {
+export const addReview = (name: string, review: string) =>
+  <const>{
     type: ADD_REVIEW,
     payload: { name, review },
   };
-}
+
+export const setLang = (lang: string) =>
+  <const>{
+    type: SET_LANG,
+    payload: { lang },
+  };
