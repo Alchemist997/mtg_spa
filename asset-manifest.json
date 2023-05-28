@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mtg_spa/static/css/main.75bde612.css",
+    "main.js": "/mtg_spa/static/js/main.b7b1bac9.js",
+    "index.html": "/mtg_spa/index.html",
+    "main.75bde612.css.map": "/mtg_spa/static/css/main.75bde612.css.map",
+    "main.b7b1bac9.js.map": "/mtg_spa/static/js/main.b7b1bac9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75bde612.css",
+    "static/js/main.b7b1bac9.js"
+  ]
+}
