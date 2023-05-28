@@ -1,4 +1,4 @@
-import { ADD_REVIEW, SET_LANG } from './../actionTypes/reviews';
+import { ADD_REVIEW, SET_LANG, SET_PAGE } from './../actionTypes/reviews';
 
 export const addReview = (name: string, review: string) =>
   <const>{
@@ -10,4 +10,10 @@ export const setLang = (lang: string) =>
   <const>{
     type: SET_LANG,
     payload: { lang },
+  };
+
+export const setPage = (page: number) =>
+  <const>{
+    type: SET_PAGE,
+    payload: { page },
   };

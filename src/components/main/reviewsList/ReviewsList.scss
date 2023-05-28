@@ -1,7 +1,7 @@
 .reviews {
   &-list-wrap {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,6 +9,7 @@
   }
 
   &-list {
+    margin-bottom: 3rem;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, minmax(calc(50% - 20px), 1fr));

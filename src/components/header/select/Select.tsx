@@ -19,7 +19,6 @@ class Select extends React.Component<SelectProps> {
               name='lang'
               value='ru'
               checked={props.lang === 'ru'}
-              className="s"
               onChange={evt => { props.dispatch(setLang(evt.target.value)); }}
             />
             ru
@@ -31,7 +30,6 @@ class Select extends React.Component<SelectProps> {
               name='lang'
               value='en'
               checked={props.lang === 'en'}
-              className="s"
               onChange={evt => { props.dispatch(setLang(evt.target.value)); }}
             />
             en

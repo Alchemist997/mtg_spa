@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/default-param-last */
 
 import reviews from './../../reviews.json';
-import { ADD_REVIEW, SET_LANG } from './../actionTypes/reviews';
+import { ADD_REVIEW, SET_LANG, SET_PAGE } from './../actionTypes/reviews';
 
 import * as actions from './../actionCreators/reviews';
 type InferValueTypes<T> = T extends { [key: string]: infer U } ? U : never;
@@ -11,6 +11,7 @@ const initialState = {
   ru: reviews.ru,
   en: reviews.en,
   currentLang: 'ru',
+  currentPage: 1,
 };
 
 export default (state = initialState, action: ReviewsActionTypes) => {
@@ -34,6 +35,13 @@ export default (state = initialState, action: ReviewsActionTypes) => {
       return {
         ...state,
         currentLang: action.payload.lang,
+        currentPage: 1,
+      };
+
+    case SET_PAGE:
+      return {
+        ...state,
+        currentPage: action.payload.page,
       };
 
     default:

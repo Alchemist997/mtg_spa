@@ -4,4 +4,5 @@ export interface ReviewsListProps {
   reviewsList: {
     [key: string]: ReviewsListItemProps;
   };
+  currentPage: number;
 }

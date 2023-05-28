@@ -1,0 +1,60 @@
+.pagination {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  &__item,
+  &__btn {
+    background-color: $dark-second-bc;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 8px 12px;
+    @extend %flex-center;
+  }
+
+  &__item {
+    cursor: default;
+  }
+
+  &__btn {
+    &--prev,
+    &--next {
+      position: relative;
+      padding: 15px 16px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 6px);
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid $main-color;
+        border-bottom: 2px solid $main-color;
+      }
+    }
+
+    &--prev::after {
+      transform: rotate(135deg);
+      right: calc(50% - 6px);
+    }
+
+    &--next::after {
+      transform: rotate(-45deg);
+      left: calc(50% - 6px);
+    }
+
+    &:hover {
+      background-color: lighten($second-bc, 8);
+    }
+
+    &:disabled {
+      background-color: grayscale($second-bc);
+      color: #aaaaaa;
+      cursor: default;
+
+      &::after {
+        border-color: #aaaaaa;
+      }
+    }
+  }
+}
