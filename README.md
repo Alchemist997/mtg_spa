@@ -1,3 +1,7 @@
+## Демо:
+
+https://alchemist997.github.io/mtg_spa
+
 ## Available Scripts
 
 In the project directory, you can run:
